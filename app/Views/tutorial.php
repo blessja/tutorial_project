@@ -22,9 +22,15 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand with-line text-primary" href="#">Logo</a>
-                <div class="collapse navbar-collapse " id="navbarNav">
-                    <ul class="navbar-nav me-auto ">
-                        <li class="nav-item ">
+                <!-- Add a button for the collapsed navbar -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Move the navbar items inside a collapsible div -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
                             <a class="nav-link active text-primary with-arrow" aria-current="page" href="#">Class 12</a>
                         </li>
                         <li class="nav-item">
@@ -33,7 +39,6 @@
                         <li class="nav-item">
                             <a class="nav-link text-primary" href="#">HTML</a>
                         </li>
-
                     </ul>
                 </div>
                 <div class="d-flex">
@@ -41,11 +46,9 @@
                         <img src="<?php echo base_url('images/img_avatar1.png'); ?>" style="width:40px;"
                             class="rounded-pill">
                     </a>
-
                 </div>
             </div>
         </nav>
-
 
 
 
@@ -210,26 +213,29 @@
         <div class="down-nav mt-5 pt-5 m-3">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
+                    <!-- Add a button for the collapsed navbar -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                     <div id="tutorialTitle"></div>
                     <a class="navbar-brand with-line text-primary" href="#">PPT: Introduction to HTML</a>
-                    <div class="collapse navbar-collapse " id="navbarNav">
-                        <ul class="navbar-nav me-auto ">
-                            <li class="nav-item ">
+                    <!-- Move the navbar items inside a collapsible div -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
                                 <a class="nav-link active text-primary with-arrow" aria-current="page" href="#">
-                                    <strong>Practice</strong>
-                                    12</a>
+                                    <strong>Practice</strong> 12
+                                </a>
                             </li>
-
                         </ul>
                     </div>
                     <div class="d-flex">
-                        <a class="navbar-brand text-primary" href="#">
-                            English
-                        </a>
-
+                        <a class="navbar-brand text-primary" href="#">English</a>
                     </div>
                 </div>
             </nav>
+
         </div>
 
     </section>
