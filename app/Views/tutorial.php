@@ -52,14 +52,7 @@
     </header>
 
     <!-- CONTENT -->
-    <section>
-        <div class="container pt-5">
-            <!-- Tutorial data will be dynamically inserted here -->
-            <div id="tutorialData">
-                <!-- Tutorial data will be dynamically inserted here -->
-            </div>
-        </div>
-    </section>
+
 
     <section>
         <div class="container pt-5">
@@ -68,8 +61,8 @@
             </div>
             <div class="right-nav bg-body-tertiary">
                 <div class="sidenav bg-body-tertiary">
-                    <button class="dropdown-btn text-primary" id="tutorialTitleBtn">
-                        <span id="titlePlaceholder"></span>
+                    <button class="dropdown-btn text-primary">
+                        <span id="tutorialTitle"></span>
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-container bg-body-tertiary">
@@ -251,14 +244,14 @@
             </div>
 
             <div class="content m-3">
-                <h2>HTML Images</h2>
+                <h2><span id="tutorialTitle2"></span></h2>
                 <div class="next-prev">
                     <a href="#" class="prev-button">&lt; Previous</a>
                     <div class="spacer"></div>
                     <a href="#" class="next-button">Next &gt;</a>
                 </div>
                 <hr>
-                <p>Images can improve the design and the appearance of a web page.</p>
+                <p><span id="tutorialDescription"></span></p>
                 <hr>
 
                 <div class="imgs row pt-5">

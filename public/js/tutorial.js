@@ -17,21 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
     xhr.send();
   }
 
-  // Call fetchTutorialData function with the constructed URL
-  fetchTutorialData(baseUrl, function (data) {
-    // Store the title and description in variables
-    var title = data.title;
-    var description = data.description;
-    var videoLink = data.videoLink;
+  // Function to update the tutorial data
+  function updateTutorialData(data) {
+    // Update the relevant parts of your HTML with fetched data
+    document.getElementById("tutorialTitle").innerText = data.title;
+    document.getElementById("tutorialTitle2").innerText = data.title_2;
+    document.getElementById("tutorialDescription").innerText = data.description;
+  }
 
-    // Update the content with fetched data
-    document.getElementById("tutorialData").innerHTML = `
-            <h2>${title}</h2>
-            <p>${description}</p>
-            <iframe width="560" height="315" src="${videoLink}" frameborder="0" allowfullscreen></iframe>
-        `;
-
-    // Set the title dynamically
-    document.getElementById("titlePlaceholder").innerText = title;
-  });
+  // Load tutorial data when the page loads
+  fetchTutorialData(baseUrl, updateTutorialData);
 });

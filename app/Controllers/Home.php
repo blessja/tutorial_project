@@ -14,8 +14,9 @@ class Home extends BaseController
         log_message('debug', 'getTutorialData method called.');
         $tutorialData = [
             'title' => 'Introduction to HTML2',
-            'description' => 'This tutorial covers the basics of HTML.',
-            'videoLink' => 'https://www.youtube.com/watch?v=VIDEO_ID',
+            'title_2' => 'HTML Images',
+            'description' => 'Images can improve the design and the appearance of a web page.',
+            
             // Add more data as needed
         ];
 
